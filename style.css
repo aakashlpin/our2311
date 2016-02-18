@@ -1,0 +1,54 @@
+html {
+  background: url(images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+body, html {
+  height: 100%;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.65);
+  height: 100%;
+  width: 100%;
+}
+
+#timer {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  justify-content: center;;
+  align-items: center;
+
+  color: #fff;
+  text-align: center;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.durationNumber {
+  font-size: 160px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+}
+
+@media (max-width: 600px) {
+  .durationNumber {
+    font-size: 75px;
+  }
+}
+
+.durationText {
+  font-size: 20px;
+  opacity: 0.7;
+  text-transform:capitalize;
+}
